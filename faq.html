@@ -103,7 +103,7 @@
                                 
                             </ul>
                         </nav>
-                        <a class="site-header__link" href="#">
+                        <a class="site-header__link js-open-modal" href="#">
                             Задать вопрос
                         </a>
                     </div>
@@ -130,14 +130,14 @@
                         </div>
                         <a class="hero-asked-questions__link" href="#">Задать вопрос</a>
                     </div>
-            
+                    
                     <details class="hero-asked-questions__details">
                         <summary class="hero-asked-questions__summary">
                             <span class="hero-asked-questions__minibox">
                                 <time class="hero-asked-questions__time" datetime="2020-09-01 16:00">
                                     01.09.2020
                                 </time>
-            
+                                
                                 <span class="hero-asked-questions__summary-name" href="#">
                                     Пономаренко Наталия
                                 </span>
@@ -154,14 +154,14 @@
                             </p>
                         </div>
                     </details>
-            
+                    
                     <details class="hero-asked-questions__details">
                         <summary class="hero-asked-questions__summary">
                             <span class="hero-asked-questions__minibox">
                                 <time class="hero-asked-questions__time" datetime="2020-09-01 16:00">
                                     01.09.2020
                                 </time>
-            
+                                
                                 <span class="hero-asked-questions__summary-name" href="#">
                                     Пономаренко Наталия
                                 </span>
@@ -178,14 +178,14 @@
                             </p>
                         </div>
                     </details>
-            
+                    
                     <details class="hero-asked-questions__details hero-asked-questions__details--inactive " disabled>
                         <summary class="hero-asked-questions__summary">
                             <span class="hero-asked-questions__minibox">
                                 <time class="hero-asked-questions__time" datetime="2020-09-01 16:00">
                                     01.09.2020
                                 </time>
-            
+                                
                                 <span class="hero-asked-questions__summary-name" href="#">
                                     Пономаренко Наталия
                                 </span>
@@ -193,14 +193,14 @@
                             Может ли кошка или собака никогда не выходящая из дома подхватить блох?
                         </summary>
                     </details>
-            
+                    
                     <details class="hero-asked-questions__details">
                         <summary class="hero-asked-questions__summary">
                             <span class="hero-asked-questions__minibox">
                                 <time class="hero-asked-questions__time" datetime="2020-08-31 16:00">
                                     31.08.2020
                                 </time>
-            
+                                
                                 <span class="hero-asked-questions__summary-name" href="#">
                                     Пономаренко Наталия
                                 </span>
@@ -217,14 +217,14 @@
                             </p>
                         </div>
                     </details>
-            
+                    
                     <details class="hero-asked-questions__details">
                         <summary class="hero-asked-questions__summary">
                             <span class="hero-asked-questions__minibox">
                                 <time class="hero-asked-questions__time" datetime="2020-08-31 16:00">
                                     31.08.2020
                                 </time>
-            
+                                
                                 <span class="hero-asked-questions__summary-name" href="#">
                                     Пономаренко Наталия
                                 </span>
@@ -241,14 +241,14 @@
                             </p>
                         </div>
                     </details>
-            
+                    
                     <details class="hero-asked-questions__details hero-asked-questions__details--inactive" disabled>
                         <summary class="hero-asked-questions__summary">
                             <span class="hero-asked-questions__minibox">
                                 <time class="hero-asked-questions__time" datetime="2020-08-27 16:00">
                                     27.08.2020
                                 </time>
-            
+                                
                                 <span class="hero-asked-questions__summary-name" href="#">
                                     Пономаренко Наталия
                                 </span>
@@ -352,5 +352,46 @@
             </div>
         </footer>
         <!-- Footer finish -->
-    </body>
-    </html>
+        <div class="modal">
+            <div class="modal-window">
+                <div class="modal__box">
+                    <button class="btn-reset js-close-modal" type="button">
+                        <img class="btn-img" src="./images/x.svg" alt="x">
+                    </button>
+                    <div class="modal-window__apps">
+                        <p class="modal-window__decs">
+                            Авторизация:
+                        </p>
+                        <div class="modal-window__links-box">
+                            <img class="modal-logo" src="./images/google.svg" alt="facebook">
+                            <a class="modal-window__link-google " href="https://www.google.com/" target="blank">Войти через
+                                Google</a>
+                            </div>
+                            <div class="modal-window__links-box-second">
+                                <img class="modal-logo" src="./images/facebook.svg" alt="google">
+                                <a class="modal-window__link-facebook" href="https://www.facebook.com/" target="blank">Войти через
+                                    Facebook</a>
+                                </div>
+                            </div>
+                            <div class="modal-window__texbox">
+                                <h2 class="modal-window__title">
+                                    Задать вопрос
+                                </h2>
+                                <form class="modal-window__form" action="https://echohtmlacademy.ru/courses" method="post">
+                                    <input class="location__users-input" type="text" name="user__name" aria-label="enter your name"
+                                    placeholder="Ваше имя" minlength="2" maxlength="25" required>
+                                <textarea class="location__users-input location__users-input--question" name="user_question" minlength="3"
+                                    aria-label="Enter your question"
+                                    placeholder="Опишите Ваш вопрос.                                    Например: в каком возрасте можно            прививать от бешенства?"></textarea>
+                                    <button class="modal-window__btn" type="submit">
+                                        Отправить
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <script src="./js/main.js"></script>
+            </body>
+            </html>

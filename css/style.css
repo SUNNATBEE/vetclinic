@@ -80,6 +80,9 @@ body{
     background-color: #f9f9f9;
     overflow-x: hidden;
 }
+.body-stop{
+    overflow: hidden;
+}
 
 .container{
     max-width: 1350px;
@@ -1761,7 +1764,7 @@ only screen and (                min-resolution: 2dppx) {
     font-weight: 700;
     font-size: 48px;
     line-height: 62px;
-
+    
     text-align: center;
     
     color: var(--main-text-color);
@@ -1789,8 +1792,8 @@ only screen and (                min-resolution: 2dppx) {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 .how-find-us__box::before {
     position: absolute;
@@ -1975,3 +1978,138 @@ only screen and (                min-resolution: 2dppx) {
     text-align: right;
 }
 /* FOOTER FINISH */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-open{
+    display: block; 
+}
+.modal-window {
+    position: relative;
+    width: 850px;
+    margin: 0 auto;
+    -webkit-animation-name: animation;
+    animation-name: animation;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes animation{
+    0%{
+        top: 0;
+    }
+    
+    50%{
+        
+    }
+    100%{
+        top: 157px;
+    }
+}
+
+@keyframes animation{
+    0%{
+        top: -700px;
+    }
+    
+    50%{
+        
+    }
+    100%{
+        top: 50px;
+    }
+}
+
+.modal__box{
+    position: relative;
+    background-image: url("../images/bg-phone-dog.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-color:#FFBD54;
+    padding-top: 119px;
+    padding-bottom: 137px;
+    padding-left: 70px;
+    display: flex;
+}
+.modal-window__texbox{
+    margin-left: 120px;
+}
+.btn-reset{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    border: none;
+    background-color: transparent;
+}
+.modal-window__apps{
+    margin-top: 30px;
+}
+.modal-window__decs{
+    margin: 0;
+    margin-bottom: 21px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #333333;
+}
+.modal-window__links-box{
+    width: 238px;
+    background-color: #fff;
+    padding-top: 14px;
+    padding-bottom: 15px;
+    padding-left: 22px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.modal-window__links-box-second{
+    width: 238px;
+    background-color: #fff;
+    padding-top: 14px;
+    padding-bottom: 15px;
+    padding-left: 22px;
+    display: flex;
+    align-items: center;
+}
+.modal-window__link-google{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #333333;
+    text-decoration: none;
+    margin-left: 13px;
+}
+.modal-window__link-facebook{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #333333;
+    text-decoration: none;
+    margin-left: 13px;
+}
+.modal-window__title{
+    margin: 0;
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 54px;
+    color: #333333;
+}
+.modal-window__btn{
+    display: block;
+    padding: 14px 67px 15px 55px;
+    background-color: #000000;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
