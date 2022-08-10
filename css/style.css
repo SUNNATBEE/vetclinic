@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* ROOT */
 :root{
     --main-font-family: "Futura PT", "Arial", sans-serif;
@@ -723,7 +730,7 @@ only screen and (                min-resolution: 2dppx) {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    color: var(--main-desc-color);
+    color: #949494;
     
 }
 
@@ -1430,8 +1437,7 @@ only screen and (                min-resolution: 2dppx) {
 }
 /* LOCATION SECTION FINISH */
 
-
-
+/* QUESTION SECTION START */
 .hero-asked-questions {
     padding-top: 118px;
     padding-bottom: 270px;
@@ -1523,6 +1529,8 @@ only screen and (                min-resolution: 2dppx) {
     content: "";
     -webkit-transition: 0.3s ease;
     -o-transition: 0.3s ease;
+    -webkit-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
     transition: 0.5s ease;
 }
 .hero-asked-questions__details--inactive::after{
@@ -1538,7 +1546,11 @@ only screen and (                min-resolution: 2dppx) {
     content: "";
 }
 .hero-asked-questions__details[open]::after{
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
     transform: rotate(180deg);
+    -webkit-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
     transition: 0.5s ease;
 }
 .hero-asked-questions__details--inactive[open]::after{
@@ -1626,8 +1638,392 @@ only screen and (                min-resolution: 2dppx) {
     
     color: var(--main-desc-color);
 }
+/* QUESTION SECTION FINISH */
+
+/* vet section start*/
+.vet__info{
+    padding-top: 33px;
+    padding-bottom: 174px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.vet__box{
+    width: 1520px;
+    margin: 0 auto;
+}
+.vet__img{
+    width: 100%;
+}
+.vet__textbox{
+    width: 638px;
+    margin-left: 188px;
+}
+.vet__list{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+}
+.vet__item:nth-child(2){
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 16px;
+}
+.vet__item:nth-child(2)::before{
+    width: 4px;
+    height: 4px;
+    background-color: #ffbd54;
+    border-radius: 50%;
+    display: inline-block;
+    content: "";
+    margin-right: 8px;
+}
+.vet__item:nth-child(2)::after{
+    width: 4px;
+    height: 4px;
+    background-color: #ffbd54;
+    border-radius: 50%;
+    display: inline-block;
+    content: "";
+    margin-left: 8px;
+}
+.vet__link{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #949494;
+    text-decoration: none;
+}
+.vet__link--black{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333333;
+}
+.vet__heading{
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 64px;
+    color: #333333;
+}
+.vet__heading-yellow{
+    color: #ffbd54;
+}
+.vet__text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #949494;
+}
+.vet__links{
+    padding-top: 64px;
+}
+.vet__dogs-list{
+    padding-left: 0;
+    list-style: none;
+}
+.vet__dogs-item{
+    margin-bottom: 11px;
+}
+/* vet section finish*/
 
 
+/* vet article start */
+.info-article{
+    position: relative;
+    background-image: url("../images/article.svg");
+    background-repeat: no-repeat;
+    content: "";
+    padding-top: 64px;
+    padding-bottom: 65px;
+}
+.article__bg{
+    position: absolute;
+    background-image:  url("../images/article-bg-big-dog.png");
+    content: "";
+    background-repeat: no-repeat;
+    width: 811px;
+    height: 636px;
+}
+.info-artcle__more{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 177px;
+}
+.location__users-input{
+    display: block;
+}
+.info-article__textbox{
+    margin-right: 61px;
+    width: 276px;
+}
+.info-article__title{
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 62px;
+    color: #FFFFFF;
+    margin: 0;   
+}
+.info-article__text{
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.info-article__btn{
+    margin-top: 26px;
+    padding: 15px 14px 49px 50px;
+}        
+
+/* vet article finish */
+
+/* clinic section start */
+
+.about-clinic {
+    position: relative;
+    background-image: url("../images/pash-with-search.svg");
+    background-repeat: no-repeat;
+    background-position: calc(50% - 255px) calc(50% - 395px);
+    padding-top: 70px;
+    
+}
+
+.about-clinic__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    
+}
+.about-clinic__img{
+    margin-bottom: -15px;
+}
+.about-clinic__bg{
+    
+}
+.about-clinic__textbox{
+    width: 411px;
+    margin-top: 117px;
+    margin-left: 177px;
+}
+
+.about-clinic__title {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 64px;
+    color: #333333;
+    margin: 0;
+    margin-bottom: 22px;
+}
+.about-clinic__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #949494;
+}
+.about-clinic__house{
+    width: 1440px;
+    margin: 0 auto;
+}
+.about-clinic__list{
+    list-style: none;
+    padding-left: 0;
+}
+.about-clinic__item{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.about-clinic__item:nth-child(1){
+    background-color: #FFFFFF;
+    border: 1px solid #F3F3F3;
+    border-radius: 5px;
+    padding-right: 66px;
+}
+.about-clinic__min-text-first{
+    width: 570px;
+    margin-left: 112px;
+}
+.about-clinic__info{
+    font-size: 20px;
+    line-height: 26px;
+    color: #949494;
+}
+.yellow{
+    color: #ffbd54;
+}
+.about-clinic__min-text{
+    margin-left: 117px;
+}
+.blue-text{
+    color: #78c0d3;
+}
+.cut-pet {
+    padding-top: 23px;
+    padding-bottom: 145px;
+}
+
+.cut-pet__container {
+    width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.cut-pet__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 117px;
+    overflow: hidden;
+}
+
+.cut-pet__textbox {
+    width: 416px;
+    margin-right: 10px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.cut-pet__text {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 48px;
+    
+    color: #333;
+    
+}
+
+.cut-pet__color-text {
+    color: #ffbd54;
+}
+
+.cut-pet__descbox {
+    width: 343px;
+    margin-bottom: 88px;
+}
+
+.cut-pet__desc {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--main-desc-color);
+}
+
+.cut-pet__button-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.cut-pet__button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+.cut-pet__button:nth-child(1) {
+    margin-right: 64px;
+    background-image: url("../images/left-arrow.svg");
+}
+.cut-pet__button:nth-child(2) {
+    background-image: url("../images/right-arrow.svg");
+}
+.cut-pet__button:hover {
+    background-color: #fff;
+}
+.cut-pet__button:active {
+    background-color: #fff;
+    opacity: 0.6;
+}
+
+.cut-pet__minibox {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 37px;
+    height: 42px;
+    margin-left: 50px;
+    background-image: url("../images/math.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cut-pet__number1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.cut-pet__number2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 14px;
+    line-height: 22px;
+    color: #949494;
+    
+}
+
+.cut-pet__img {
+    width: 307px;
+    height: 400px;
+    margin-left: 20px;
+}
+
+
+
+/* clinic section finsh */
+
+/* hero contact start */
 .hero-contact {
     padding-top: 118px;
     padding-bottom: 25px;
@@ -1836,7 +2232,7 @@ only screen and (                min-resolution: 2dppx) {
         background-image: url("../images/bulldog@2x.png");
     }
 }
-
+/* hero contact finish */
 
 /* FOOTER START */
 .site-footer{
@@ -2038,6 +2434,8 @@ only screen and (                min-resolution: 2dppx) {
     padding-top: 119px;
     padding-bottom: 137px;
     padding-left: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .modal-window__texbox{
@@ -2067,7 +2465,11 @@ only screen and (                min-resolution: 2dppx) {
     padding-top: 14px;
     padding-bottom: 15px;
     padding-left: 22px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-bottom: 15px;
 }
@@ -2077,7 +2479,11 @@ only screen and (                min-resolution: 2dppx) {
     padding-top: 14px;
     padding-bottom: 15px;
     padding-left: 22px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .modal-window__link-google{
@@ -2115,13 +2521,14 @@ only screen and (                min-resolution: 2dppx) {
 }
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
 only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
+only screen and (                -webkit-min-device-pixel-ratio: 2),
+only screen and (                -o-min-device-pixel-ratio: 2/1),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
     .modal__box{
         background-image: url("../images/bg-phone-dog2x.png");
     }
-  
+    
 }
