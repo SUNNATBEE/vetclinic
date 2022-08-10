@@ -12,6 +12,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* ROOT */
 :root{
     --main-font-family: "Futura PT", "Arial", sans-serif;
@@ -1307,6 +1314,7 @@ only screen and (                min-resolution: 2dppx) {
     
 }
 .useful__link:active{
+    color: #333333;
     opacity: 0.6;
 }
 .useful__item--width{
@@ -1591,8 +1599,6 @@ only screen and (                min-resolution: 2dppx) {
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
-    
-    
     color: var(--main-text-color);
     
 }
@@ -1621,10 +1627,8 @@ only screen and (                min-resolution: 2dppx) {
 .hero-asked-questions__summary-name {
     font-size: 12px;
     line-height: 22px;
-    
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    
     color: #78c0de;
 }
 
@@ -1710,6 +1714,9 @@ only screen and (                min-resolution: 2dppx) {
     color: #949494;
     text-decoration: none;
 }
+.vet__link:nth-child(1):hover{
+    color: #ffbd54;
+}
 .vet__link--black{
     font-weight: 400;
     font-size: 14px;
@@ -1749,18 +1756,195 @@ only screen and (                min-resolution: 2dppx) {
 }
 /* vet section finish*/
 
+/* Animals section start      */
+.animals {
+    padding-top: 37px;
+    padding-bottom: 41px;
+}
+
+.animals__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+.animals__text-box {
+    width:560px;
+    margin-left: 177px;
+}
+.animals__heading {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 64px;
+    color: #333333;
+}
+.animals__text {
+    font-size: 16px;
+    line-height: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #949494;
+}
+/* Animals section finsih     */
+
+/* CAT INFO SECTION START */
+.cat-info {
+    margin-bottom: 126px;
+    
+}
+
+.cat-info-box {
+    width: 1308px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #fff;
+    margin-bottom: 126px;
+}
+.cat-info-box:hover{
+    -webkit-filter: drop-shadow(0px 4px 4px rgba(0,0,0,.25));
+    filter: drop-shadow(0px 4px 4px rgba(0,0,0,.25));
+}
+.cat-info__text-box {
+    width: 750px;
+    padding: 68px 110px 68px 81px;
+}
+.cat-info__time {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 35px;
+}
+.cat-info__data{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #949494;
+}    
+.cat-info__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+}
+.cat-info__item:nth-child(2) {
+    margin-left: 7px;
+    margin-right: 7px;
+}
+.cat-info__link {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #3D9CEA;
+    text-decoration: none;
+}
+.cat-info__title-info{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+.cat-info__text-width{
+    width: 517px;
+}
+.cat-info__text-info{
+    font-size: 16px;
+    line-height: 20px;
+    color: #949494;
+    margin-bottom: 51px;
+}
+.cat-info__list-info{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 116px;
+}
+.cat-info__items{
+    margin-bottom: 60px;
+}
+.cat-info__btn{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    background-color: #333333;
+    border-radius: 3px;
+    border: none;
+    padding: 16px 40px 16px 40px;
+}
+.cat-info__btn::before{
+    background-image: url("../images/sircle.svg");
+    background-repeat: no-repeat;
+    content: "";
+    display: inline-block;
+    width: 19px;
+    height: 16px;
+    margin-right: 6px;
+}
+.cat-info__btn:hover{
+    border: none;
+    background-color: #ffbd54;
+    color: #333333;
+}
+.cat-info__btn:active{
+    opacity: 0.6;
+}
+/* CAT INFO SECTION START */
+
 
 /* vet article start */
 .info-article{
     position: relative;
     background-image: url("../images/article.svg");
     background-repeat: no-repeat;
+    background-size: 100% 100%;
     content: "";
+    margin-bottom: 187px;
     padding-top: 64px;
     padding-bottom: 65px;
 }
 .article__bg{
     position: absolute;
+    top: calc(50% - 297px);
+    left: calc(50% + 35px);
     background-image:  url("../images/article-bg-big-dog.png");
     content: "";
     background-repeat: no-repeat;
@@ -1771,7 +1955,7 @@ only screen and (                min-resolution: 2dppx) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 177px;
+    margin-left: 117px;
 }
 .location__users-input{
     display: block;
@@ -1818,8 +2002,12 @@ only screen and (                min-resolution: 2dppx) {
     width: 335px;
     padding: 36px 29px 43px 36px;
     background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     border-left: 8px solid #ffbd54;
+    -webkit-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
     /* display: none; */
 }
