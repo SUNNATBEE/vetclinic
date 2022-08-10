@@ -11,3 +11,10 @@ elCloseModalBtn.addEventListener("click", function () {
     elModal.classList.remove("modal-open");
     elBodyModal.classList.remove("body-stop");
 })
+var alertlBtn = document.querySelector(".js-open-alert");
+var alert = document.querySelector(".modal-window");
+var alertcloselBtn = document.querySelector(".js-close-alert");
+
+alertlBtn.addEventListener("click", function(){
+    alert.classList.add("alert-open");
+})

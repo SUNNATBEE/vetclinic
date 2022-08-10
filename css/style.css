@@ -113,6 +113,9 @@ body{
 }
 
 /* SITE HEADER TOP START */
+.site-header{
+    position: relative;
+}
 .site-header__topbox {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1799,13 +1802,48 @@ only screen and (                min-resolution: 2dppx) {
 
 /* clinic section start */
 
-.about-clinic {
+.about-clinic{
     position: relative;
     background-image: url("../images/pash-with-search.svg");
     background-repeat: no-repeat;
     background-position: calc(50% - 255px) calc(50% - 395px);
-    padding-top: 70px;
+    padding-top: 45px;
     
+}
+.alert-window{
+    position: absolute;
+    top: calc(50% + 5px);
+    right: calc(50% - 665px);
+    z-index: 10;
+    width: 335px;
+    padding: 36px 29px 43px 36px;
+    background-color: #fff;
+    display: flex;
+    border-left: 8px solid #ffbd54;
+    transition: 0.5s ease-in-out;
+    /* display: none; */
+}
+
+.alert-heading{
+    font-weight: 450;
+    font-size: 24px;
+    line-height: 26px;
+    color: #333333;
+    margin-left: 40px;
+}
+.alert-close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    background-color: transparent;
+}
+.follow-btn{
+    position: absolute;
+    top: calc(50% + 20px);
+    right: calc(50% - 500px);
+    border: none;
+    background-color: transparent;
 }
 
 .about-clinic__box {
